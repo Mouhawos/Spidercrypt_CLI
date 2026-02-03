@@ -1,0 +1,16 @@
+# Environnement
+.env
+*.env
+
+# Logs & données locales
+api_logs.json
+prompt_logs.json
+audit.json
+llm_response.txt
+masked.txt
+sensitive.txt
+
+# Python
+__pycache__/
+*.pyc
+venv/
