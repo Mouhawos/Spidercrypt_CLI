@@ -174,8 +174,8 @@ See the LICENSE file for more information.
 Developed by Mouhamed Sow
 Founder of Spidercrypt
 
-📧 Contact: support@spidercrypt.io
-🌐 Website: https://spidercrypt.io
+
+🌐 Website: https://spidercrypt.com/
 
 ⭐ Support
 If this project helps you:
