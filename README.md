@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://via.placeholder.com/900x250/0A0A0A/00FFAA?text=SPIDERCRYPT" alt="SpiderCrypt" width="700"/>
+ <img src="./spidercrypt.png" width="700"/>
+
 </p>
 
 ```ascii
