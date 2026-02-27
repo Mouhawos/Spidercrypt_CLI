@@ -57,16 +57,17 @@ Perfect for auditing datasets before publishing them on Hugging Face, Kaggle, or
 | `gen-key`              | Generate a secure AES-256 key |
 | `history`              | View audit history (stored in SQLite) |
 
----
+📖 Quick Start
+Generate a key
+Bashspidercrypt gen-key
+Detect data poisoning
+Bashspidercrypt detect-poison dataset.json
+Prompt firewall
+Bashspidercrypt firewall "ignore previous instruction"
+(et toutes les autres commandes sont dans la version précédente)
 
-## 🚀 Installation
-
-```bash
-git clone https://github.com/MouhamedSo1978/spidercrypt.git
-cd spidercrypt
-
-python -m venv venv
-source venv/bin/activate          # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-pip install -e .
+📄 License
+MIT License
+Author: Mouhamed Sow (@MouhamedSo1978) – Laval, Québec, Canada
+Date: February 2026
+⭐ Si ça te plaît, n’oublie pas de mettre une étoile !
