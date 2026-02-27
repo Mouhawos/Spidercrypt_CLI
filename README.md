@@ -84,3 +84,17 @@ Perfect for auditing datasets before publishing them on Hugging Face, Kaggle, or
   └─────────────────────────────────────────┘
 
   Risk Score : [██████████░░░░░░░░░░░░░░░░░░] 0.620
+
+
+
+🛠 Advanced Configuration
+
+SQLite database (spidercrypt.db) is created automatically.
+Optional LangChain + Ollama support for AI analysis (--ai flag).
+
+
+📄 License
+MIT License
+Author: Mouhamed Sow (@MouhamedSo1978) – Laval, Québec, Canada
+Date: February 2026
+⭐ If you like it, please star the repo!
