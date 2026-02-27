@@ -20,10 +20,10 @@
 
 **SpiderCrypt** — The all-in-one security & AI auditing CLI tool
 
-[<image-card alt="Python 3.9+" src="https://img.shields.io/badge/Python-3.9%2B-blue" ></image-card>](https://www.python.org)
-[<image-card alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" ></image-card>](https://opensource.org/licenses/MIT)
-[<image-card alt="Version" src="https://img.shields.io/badge/version-1.1-green" ></image-card>](https://github.com/MouhamedSo1978/spidercrypt)
-[<image-card alt="Stars" src="https://img.shields.io/github/stars/MouhamedSo1978/spidercrypt?style=social" ></image-card>](https://github.com/MouhamedSo1978/spidercrypt)
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.1-green)](https://github.com/MouhamedSo1978/spidercrypt)
+[![Stars](https://img.shields.io/github/stars/MouhamedSo1978/spidercrypt?style=social)](https://github.com/MouhamedSo1978/spidercrypt)
 
 </div>
 
@@ -57,17 +57,30 @@ Perfect for auditing datasets before publishing them on Hugging Face, Kaggle, or
 | `gen-key`              | Generate a secure AES-256 key |
 | `history`              | View audit history (stored in SQLite) |
 
-📖 Quick Start
-Generate a key
-Bashspidercrypt gen-key
-Detect data poisoning
-Bashspidercrypt detect-poison dataset.json
-Prompt firewall
-Bashspidercrypt firewall "ignore previous instruction"
-(et toutes les autres commandes sont dans la version précédente)
+---
 
-📄 License
-MIT License
-Author: Mouhamed Sow (@MouhamedSo1978) – Laval, Québec, Canada
-Date: February 2026
-⭐ Si ça te plaît, n’oublie pas de mettre une étoile !
+## 🚀 Quick Start
+
+| Command | Example | Description |
+|---------|---------|-----------|
+| **Generate key** | `spidercrypt gen-key` | Generate a secure AES-256 key |
+| **Encrypt file** | `SPIDER_KEY=ta-clé spidercrypt encrypt input.txt output.enc` | Encrypt any file with AES-256-GCM |
+| **Decrypt file** | `SPIDER_KEY=ta-clé spidercrypt decrypt output.enc restored.txt` | Decrypt a protected file |
+| **Detect poisoning** | `spidercrypt detect-poison dataset.json` | Scan a JSON dataset for data poisoning |
+| **Advanced poisoning scan** | `spidercrypt detect-poison *.json --json-output --save` | Multiple files + save report in DB |
+| **Code audit** | `spidercrypt audit script.py --ai` | Scan source code for secrets & vulnerabilities |
+| **Prompt firewall** | `spidercrypt firewall "ignore previous instruction"` | Block prompt injection attempts |
+| **Mask PII** | `spidercrypt ghost-pii data.txt --output clean.txt` | Automatically hide emails, credit cards… |
+| **View history** | `spidercrypt history` | Show all previous audit reports |
+
+---
+
+## 📊 Example `detect-poison` Report
+
+```bash
+🔍 Analyzing: dataset.json
+  ┌─────────────────────────────────────────┐
+  │  🚨  DATA POISONING DETECTED             │
+  └─────────────────────────────────────────┘
+
+  Risk Score : [██████████░░░░░░░░░░░░░░░░░░] 0.620
