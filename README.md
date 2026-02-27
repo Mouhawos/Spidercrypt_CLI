@@ -34,7 +34,7 @@ It detects:
 - ☠️ Data poisoning in JSON datasets (label-flip attacks, backdoor triggers, label inconsistencies, etc.)
 - 👤 PII leakage
 - 🔓 Insecure code patterns
-- And more!
+  
 
 > Perfect for auditing datasets before publishing them on Hugging Face, Kaggle, or GitHub.
 
