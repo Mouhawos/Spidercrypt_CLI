@@ -74,18 +74,19 @@ Perfect for auditing datasets before publishing them on Hugging Face, Kaggle, or
 | **View history** | `spidercrypt history` | Show all previous audit reports |
 
 ---
-
-## 📊 Example `detect-poison` Report
+## 📊 Example `detect-poison`
 
 ```bash
-🔍 Analyzing: dataset.json
+🔍 Analyse de : dataset.json
   ┌─────────────────────────────────────────┐
-  │  🚨  DATA POISONING DETECTED             │
+  │  🚨  DATA POISONING DÉTECTÉ              │
   └─────────────────────────────────────────┘
 
   Risk Score : [██████████░░░░░░░░░░░░░░░░░░] 0.620
 
-
+  ⚠️  Backdoor triggers détectés dans 3 valeur(s) (0.8%)
+  🔓 2 record(s) : code INSÉCURISÉ mais label 'safe'
+  🔀 1 entrée avec labels contradictoires
 
 🛠 Advanced Configuration
 
