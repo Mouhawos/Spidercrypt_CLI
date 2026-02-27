@@ -13,6 +13,32 @@
  |____/|_|   |___|____/|_____|_| \_\\____|_| \_\ \_/  |_|     |_|  
                                                                    
       >>> SECURITY & CRYPTOGRAPHY TOOLSET v1.1 <<<
+
+      Usage: spidercrypt.py [OPTIONS] COMMAND [ARGS]...
+
+SpiderCrypt CLI - Cybersecurity tool.
+
+Options:
+
+--verbose
+--help Show this message and exit.
+
+Commands:
+
+audit Security scan (Regex + AI).
+
+decrypt Decrypts a file protected by AES-GCM.
+
+detect-poison Analyzes one or more JSON files to detect...
+
+encrypt Encrypts a file with AES-GCM.
+firewall Checks for injections (Text or File).
+
+gen-key Generates an AES-256 key in base64.
+
+ghost-pii Masks personal data.
+
+history Displays the audit history.
 </pre>
 </p>
 
