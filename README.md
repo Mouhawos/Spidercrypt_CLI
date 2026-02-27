@@ -154,7 +154,7 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 ## ❤️ Acknowledgments
 
 Thank you for checking out SpiderCrypt!  
-If you find it useful, please give it a ⭐ on GitHub!
+If you find it useful, please give it a ⭐ 
 
 **Author:** Mouhamed Sow ([@MouhamedSo1978](https://github.com/MouhamedSo1978))  
 **Location:** Laval, Québec, Canada  
