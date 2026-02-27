@@ -129,7 +129,7 @@ spidercrypt ghost-pii data.txt --output data_anonymized.txt
 
 - SQLite database (`spidercrypt.db`) is created automatically.
 - Optional LangChain + Ollama support for AI-powered analysis (`--ai` flag).
-- Want the DB path configurable? Just let me know — I can update the code in 2 minutes.
+
 
 ---
 
