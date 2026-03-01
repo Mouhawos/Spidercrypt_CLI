@@ -58,7 +58,7 @@ It detects:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/spidercrypt.git
+git clone https://github.com/Mouhawos/spidercrypt.git
 cd spidercrypt
 
 # 2. Create a virtual environment (recommended)
