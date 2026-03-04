@@ -462,7 +462,7 @@ BANNER = r"""
       >>> SECURITY & CRYPTOGRAPHY TOOLSET v1.1 <<<
 """
 
-@click.group()
+@click.group(invoke_without_command=True)
 @click.option("--verbose", is_flag=True)
 @click.pass_context
 def cli(ctx, verbose):
@@ -470,6 +470,10 @@ def cli(ctx, verbose):
     click.secho(BANNER, fg="cyan", bold=True)
     ctx.ensure_object(dict)
     ctx.obj["verbose"] = verbose
+
+    # Affiche l'aide si lancé sans sous-commande
+    if ctx.invoked_subcommand is None:
+        click.echo(ctx.get_help())
 
 
 @cli.command(name="gen-key")
@@ -710,7 +714,8 @@ def _print_poison_report(report: Dict[str, Any]):
 
     click.echo()
 
-
 if __name__ == "__main__":
-    click.secho(BANNER, fg="cyan", bold=True)
-    cli(obj={})
+    cli(obj={})  
+
+
+
