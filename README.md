@@ -76,9 +76,16 @@ pip install -e .
 
 ## 📖 Quick Start
 
+**Starting with the command**
+```bash
+spidercrypt
+```
+
+
+
 **Generate a key**
 ```bash
-spidercrypt gen-key
+python.cli gen-key
 ```
 
 **Encrypt a file**
