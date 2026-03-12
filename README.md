@@ -25,7 +25,7 @@
 
 ## 🌟 Overview
 
-SpiderCrypt is a powerful open-source Python CLI tool designed to help developers, AI researchers, and security professionals secure their code and datasets.
+SpiderCrypt is a open-source Python CLI tool designed to help developers, AI researchers, and security professionals secure their code and datasets.
 
 It detects:
 
