@@ -76,7 +76,7 @@ spidercrypt
 
 **Generate a key**
 ```bash
-python.cli gen-key
+spidercrypt gen-key
 ```
 
 **Encrypt a file**
