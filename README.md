@@ -13,7 +13,7 @@
 ╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   
 """ 
                                                                    
-      >>> SECURITY & CRYPTOGRAPHY TOOLSET v1.1 <<<
+      >>> SECURITY & CRYPTOGRAPHY TOOLSET v1.3.6 <<<
 ```
 
 <p align="center">
