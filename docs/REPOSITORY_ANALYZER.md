@@ -32,3 +32,29 @@ The scanner also reports Python file inventory, file extensions, and frameworks 
 
     pip install pytest
     pytest tests/test_repository_analyzer.py -q
+
+
+## CodeQL integration
+
+GitHub Actions runs CodeQL on Python pushes and pull requests targeting `main`,
+and weekly. The workflow uses the `security-extended` query suite and uploads
+results to GitHub code scanning (subject to repository plan/settings support).
+The workflow is defined in `.github/workflows/codeql.yml`.
+
+## Optional AI security reviewer
+
+The AI reviewer interprets Spidercrypt's structured findings and returns a
+prioritized explanation and suggested fixes. It does not execute repository
+code, modify files, or apply patches. It excludes raw source evidence from the
+request to reduce accidental secret disclosure.
+
+Configure `OPENAI_API_KEY` in the environment, then run:
+
+    python -m spidercrypt_scanner . --ai-review
+
+Optional configuration:
+
+    SPIDERCRYPT_AI_MODEL=gpt-4.1-mini
+    SPIDERCRYPT_AI_BASE_URL=https://api.openai.com/v1
+
+The AI review is advisory. Confirm every finding and proposed fix manually.
