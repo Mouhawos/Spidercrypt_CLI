@@ -8,11 +8,18 @@ def main() -> int:
     parser = argparse.ArgumentParser(prog="spidercrypt-scan", description="Analyze a Python repository for common security issues.")
     parser.add_argument("repository", nargs="?", default=".", help="Repository directory")
     parser.add_argument("--json", dest="json_output", help="Write JSON report to this path")
+    parser.add_argument("--ai-review", action="store_true", help="Add an AI review (requires OPENAI_API_KEY)")
     args = parser.parse_args()
     try:
         report = analyze_repository(args.repository)
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
+    if args.ai_review:
+        try:
+            from .ai_agent import review_report
+            report["ai_review"] = review_report(report)
+        except (RuntimeError, OSError, ValueError) as exc:
+            parser.error(str(exc))
     output = report_json(report)
     if args.json_output:
         Path(args.json_output).write_text(output + "\n", encoding="utf-8")
